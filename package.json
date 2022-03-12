@@ -4,7 +4,7 @@
   "description": "A personal website with a CV",
   "main": "main.js",
   "scripts": {
-    "build": "npx eleventy --formats=liquid,png,ico,svg,css,js,json,woff2 --watch --output dist"
+    "build": "npx @11ty/eleventy --formats=liquid,png,ico,svg,css,js,json,woff2 --watch --output dist"
   },
   "repository": {
     "type": "git",
