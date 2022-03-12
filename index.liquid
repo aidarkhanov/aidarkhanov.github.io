@@ -1,0 +1,102 @@
+---
+title: CV
+description: A CV page consisting of a personal information, list of known technologies and experience.
+email: aidarkhanov.dair@gmail.com
+phone_number: "+37122052780"
+
+skills:
+  - JavaScript (front-end)
+  - PHP
+  - HTML
+  - CSS
+  - SQL (PostgreSQL, MySQL)
+
+familiar_with:
+  - BEM
+  - Web accessibility
+  - SOLID
+  - Design patterns (creational, structural, behavioral)
+  - Git
+
+experiences:
+  - College practice (creation of basic forms to automate documentary work)
+  - Side project for Global Grants (front-end to search scholarships)
+
+languages:
+  - English (fluent)
+  - Russian (native)
+  - Latvian (very basic)
+---
+<!doctype html>
+<html class="page" lang="en-US">
+
+<head>
+  <title>Dair Aidarkhanov | {{ title }}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/image/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/image/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body class="cv page__body">
+
+<header class="cv__header">
+  <h1>Dair Aidarkhanov</h1>
+  <p>Web developer, Riga, Latvia</p>
+  <p><a href="mailto:{{ email }}">{{ email }}</a>, <a href="tel:{{ phone_number }}">{{ phone_number }}</a></p>
+</header>
+
+<main class="cv__main">
+  <section class="list">
+    <h2>Skills</h2>
+
+    <ul>
+      {%- for skill in skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="list">
+    <h2>Experience</h2>
+
+    <ul>
+      {%- for experience in experiences %}
+        <li>{{ experience }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="list">
+    <h2>Familiar with</h2>
+
+    <ul>
+      {%- for familiar in familiar_with %}
+        <li>{{ familiar }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="list">
+    <h2>Languages</h2>
+
+    <ul>
+    {%- for language in languages %}
+      <li>{{ language }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+</main>
+
+<script type="module" src="/script/main.js"></script>
+
+</body>
+
+</html>

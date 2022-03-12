@@ -1,0 +1,19 @@
+{
+  "name": "aidarkhanov.github.io",
+  "version": "1.0.0",
+  "description": "A personal website with a CV",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidarkhanov/aidarkhanov.github.io.git"
+  },
+  "author": "Dair Aidarkhanov <aidarkhanov.dair@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aidarkhanov/aidarkhanov.github.io/issues"
+  },
+  "homepage": "https://github.com/aidarkhanov/aidarkhanov.github.io#readme"
+}
