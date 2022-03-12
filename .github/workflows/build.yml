@@ -30,3 +30,6 @@ jobs:
         with:
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          touch CNAME
+          echo "dair.lv" > CNAME
