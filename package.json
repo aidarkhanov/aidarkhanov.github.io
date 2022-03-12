@@ -4,7 +4,7 @@
   "description": "A personal website with a CV",
   "main": "main.js",
   "scripts": {
-    "build": "npx eleventy --formats=liquid,png,ico,svg,css,js,json,woff2 --watch --output dist"
+    "build": "eleventy --formats=liquid,png,ico,svg,css,js,json,woff2 --watch --output dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aidarkhanov/aidarkhanov.github.io/issues"
   },
-  "homepage": "https://github.com/aidarkhanov/aidarkhanov.github.io#readme"
+  "homepage": "https://github.com/aidarkhanov/aidarkhanov.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
 }
