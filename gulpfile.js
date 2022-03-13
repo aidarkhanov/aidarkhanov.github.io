@@ -29,15 +29,6 @@ gulp.task("scripts", () =>
     .pipe(gulp.dest("dist/scripts"))
 )
 
-gulp.task("paths", () =>
-  gulp
-    .src("dist/**/*.html")
-    .pipe(replace(
-      /(<script) type="module"( src="\/scripts)\/main(.js">)/, '$1$2$3'
-    ))
-    .pipe(gulp.dest("dist"))
-)
-
 gulp.task("cache:hash", () =>
   gulp
     .src([
@@ -81,7 +72,6 @@ gulp.task("clean", () =>
 gulp.task("build", gulp.series(
   "styles",
   "scripts",
-  "paths",
   "cache",
   "clean"
 ))
