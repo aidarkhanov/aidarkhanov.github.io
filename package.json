@@ -1,19 +1,31 @@
 {
-  "name": "aidarkhanov.github.io",
-  "version": "1.0.0",
-  "description": "A personal website with a CV",
-  "main": "main.js",
+  "private": "true",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
   "scripts": {
-    "build": "npx @11ty/eleventy --formats=liquid,png,ico,svg,css,js,json,woff2 --output dist"
+    "start": "eleventy --serve --quiet",
+    "build": "rm -rf dist && eleventy && gulp build",
+    "deploy": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aidarkhanov/aidarkhanov.github.io.git"
-  },
-  "author": "Dair Aidarkhanov <aidarkhanov.dair@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aidarkhanov/aidarkhanov.github.io/issues"
-  },
-  "homepage": "https://github.com/aidarkhanov/aidarkhanov.github.io#readme"
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-replace": "^1.1.3",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^5.0.0",
+    "gulp-terser": "^2.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.8",
+    "postcss-csso": "^6.0.0",
+    "postcss-import": "^14.0.2",
+    "rollup-stream": "^1.24.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-paths": "^3.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }
