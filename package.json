@@ -15,7 +15,6 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
-    "gulp-replace": "^1.1.3",
     "gulp-rev": "^9.0.0",
     "gulp-rev-rewrite": "^5.0.0",
     "gulp-terser": "^2.1.0",
