@@ -6,6 +6,8 @@ module.exports = config => {
   config.addPassthroughCopy("src/scripts")
   config.addPassthroughCopy("src/styles")
 
+  config.addShortcode("year", () => `${new Date().getFullYear()}`)
+
   config.addFilter("fixLinks", content => {
     const reg = /(src="[^(https:\/\/)])|(src="\/)|(href="[^(https:\/\/)])|(href="\/)/g
     const prefix = `https://dair.lv${content.url}`
