@@ -4,34 +4,34 @@ description: A CV page consisting of a personal information, list of known techn
 email: aidarkhanov.dair@gmail.com
 phone_number: "+37122052780"
 
-sections:
+skills:
   - name: Skills
     list:
-      - item: PHP
+      - heading: PHP
         description: Familiar with Laravel, OOP, design patterns, PSR standards, basic security.
-      - item: JavaScript
+      - heading: JavaScript
         description: Front-end development, React, Svelte, familiar with PWA.
-      - item: HTML
+      - heading: HTML
         description: Know how to create semantic markup and test the markup with the accessibility tools (VoiceOver).
-      - item: CSS
+      - heading: CSS
         description: Have a conceptual understanding of BEM, modern styling techniques, such as grid, scopes, container queries.
-      - item: SQL
+      - heading: SQL
         description: Able to design simple table structure, layout their relationship and make queries to the database.
 
   - name: Familiar with
     list:
-      - item: Git
+      - heading: Git
         description: Know how to contribute into projects, make commits and push changes, work on different branches.
-      - item: SOLID
+      - heading: SOLID
         description: Practiced each principle of SOLID and can use them whenever they are a good fit.
 
   - name: Languages
     list:
-      - item: English
+      - heading: English
         description: Fluent proficiency.
-      - item: Russian
+      - heading: Russian
         description: Native speaker.
-      - item: Latvian
+      - heading: Latvian
         description: Very basic but constantly improving.
 ---
 <!doctype html>
@@ -62,13 +62,13 @@ sections:
 </header>
 
 <main class="main">
-{%- for section in sections %}
+{%- for skill in skills %}
   <section class="skills">
-    <h2 class="skills__heading">{{ section.name }}</h2>
+    <h2 class="skills__heading">{{ skill.name }}</h2>
 
     <dl class="skills__list">
-    {%- for item in section.list %}
-      <dt class="skills__list-heading">{{ item.item }}</dt>
+    {%- for item in skill.list %}
+      <dt class="skills__list-heading">{{ item.heading }}</dt>
       <dd class="skills__list-description">{{ item.description }}</dd>
     {%- endfor %}
     </dl>
