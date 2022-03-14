@@ -7,30 +7,32 @@ phone_number: "+37122052780"
 sections:
   - name: Skills
     list:
-      - JavaScript (front-end)
-      - PHP
-      - HTML
-      - CSS
-      - SQL (PostgreSQL, MySQL)
+      - item: PHP
+        description: Familiar with Laravel, OOP, design patterns, PSR standards, basic security.
+      - item: JavaScript
+        description: Front-end development, React, Svelte, familiar with PWA.
+      - item: HTML
+        description: Know how to create semantic markup and test the markup with the accessibility tools (VoiceOver).
+      - item: CSS
+        description: Have a conceptual understanding of BEM, modern styling techniques, such as grid, scopes, container queries.
+      - item: SQL
+        description: Able to design simple table structure, layout their relationship and make queries to the database.
 
   - name: Familiar with
     list:
-      - BEM
-      - Web accessibility
-      - SOLID
-      - Design patterns (creational, structural, behavioral)
-      - Git
-
-  - name: Experiences
-    list:
-      - College practice (creation of basic forms to automate documentary work)
-      - Side project for Global Grants (front-end to search scholarships)
+      - item: Git
+        description: Know how to contribute into projects, make commits and push changes, work on different branches.
+      - item: SOLID
+        description: Practiced each principle of SOLID and can use them whenever they are a good fit.
 
   - name: Languages
     list:
-      - English (fluent)
-      - Russian (native)
-      - Latvian (very basic and constantly improving)
+      - item: English
+        description: Fluent proficiency.
+      - item: Russian
+        description: Native speaker.
+      - item: Latvian
+        description: Very basic but constantly improving.
 ---
 <!doctype html>
 <html class="page" lang="en-US">
@@ -55,24 +57,35 @@ sections:
 <body class="page__body">
 
 <header class="header">
-  <h1 class="header__name">Dair Aidarkhanov</h1>
-  <p class="header__description">Web developer, Riga, Latvia</p>
-  <p class="header__contacts"><a href="mailto:{{ email }}">{{ email }}</a>, <a href="tel:{{ phone_number }}">{{ phone_number }}</a></p>
+  <h1 class="header__name">Hey, I’m Dair</h1>
+  <p class="header__description">A web developer based in Riga, Latvia</p>
 </header>
 
 <main class="main">
-  {%- for section in sections %}
-    <section class="section">
-      <h2 class="section__header">{{ section.name }}</h2>
+{%- for section in sections %}
+  <section class="skills">
+    <h2 class="skills__heading">{{ section.name }}</h2>
 
-      <ul class="section__list">
-        {%- for item in section.list %}
-          <li class="section__list-item">{{ item }}</li>
-        {%- endfor %}
-      </ul>
-    </section>
-  {%- endfor %}
+    <dl class="skills__list">
+    {%- for item in section.list %}
+      <dd class="section__list-heading">{{ item.item }}</dd>
+      <dt class="skills__list-description">{{ item.description }}</dt>
+    {%- endfor %}
+    </dl>
+  </section>
+{%- endfor %}
+
+  <section class="contacts">
+    <h2>Connect with me!</h2>
+
+    <a href="mailto:aidarkhanov.dair@gmail.com">aidarkhanov.dair@gmail.com</a>
+    <a href="tel:+37122052780">+371 220 527 80</a>
+  </section>
 </main>
+
+<footer class="footer">
+  2022
+</footer>
 
 <script type="module" src="/scripts/main.js"></script>
 
