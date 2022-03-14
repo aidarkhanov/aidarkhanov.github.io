@@ -6,8 +6,7 @@
   },
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "build": "rm -rf dist && eleventy && gulp build",
-    "deploy": ""
+    "build": "rm -rf dist && eleventy && gulp build"
   },
   "license": "MIT",
   "devDependencies": {
