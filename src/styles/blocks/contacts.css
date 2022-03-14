@@ -38,4 +38,8 @@
   .contacts__heading {
     font-size: 2.25rem;
   }
+
+  .contacts__link {
+    font-size: 1.5rem;
+  }
 }
