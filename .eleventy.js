@@ -11,13 +11,13 @@ module.exports = config => {
   config.addFilter("fixLinks", content => {
     const reg = /(src="[^(https:\/\/)])|(src="\/)|(href="[^(https:\/\/)])|(href="\/)/g
     const prefix = `https://dair.lv${content.url}`
-    return content.templateContent.replace(reg, (match) => {
+    return content.templateContent.replace(reg, match => {
       if (match === `src="/` || match === `href="/`) {
         match = match.slice(0, -1)
         return match + prefix
-      } else {
-        return match.slice(0, -1) + prefix + match.slice(-1)
       }
+
+      return match.slice(0, -1) + prefix + match.slice(-1)
     })
   })
 
@@ -25,7 +25,7 @@ module.exports = config => {
     content.replace(/<img(?!.*loading)/g, "<img loading=\"lazy\"")
   })
 
-  config.addTransform("htmlmin", (content, outputPath) => {
+  config.addTransform("minifyHtml", (content, outputPath) => {
     if (outputPath && outputPath.endsWith(".html")) {
       const minify = require("html-minifier").minify
 
