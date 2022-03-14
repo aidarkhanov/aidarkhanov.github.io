@@ -45,7 +45,7 @@ gulp.task("cache:hash", () =>
 )
 
 gulp.task("cache:replace", () => {
-  const manifest = fs.readFileSync("dist/rev.json");
+  const manifest = fs.readFileSync("dist/rev.json")
 
   return gulp
     .src([

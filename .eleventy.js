@@ -27,15 +27,14 @@ module.exports = config => {
 
   config.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath && outputPath.endsWith(".html")) {
-      let htmlmin = require("html-minifier")
-      let result = htmlmin.minify(
-        content, {
-          removeComments: true,
-          collapseWhitespace: true
-        }
-      )
-      return result
+      const minify = require("html-minifier").minify
+
+      return minify(content, {
+        removeComments: true,
+        collapseWhitespace: true
+      })
     }
+
     return content
   })
 
@@ -45,9 +44,9 @@ module.exports = config => {
       output: "dist"
     },
     dataTemplateEngine: "liquid",
-    markdownTemplateEngine: false,
     htmlTemplateEngine: "liquid",
-    passthroughFileCopy: true,
-    templateFormats: ["liquid"]
+    templateFormats: ["liquid"],
+    markdownTemplateEngine: false,
+    passthroughFileCopy: true
   }
 }
