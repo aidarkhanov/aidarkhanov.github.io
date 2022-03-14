@@ -1,8 +1,10 @@
 ---
 title: CV
 description: A CV page consisting of a personal information, list of known technologies and experience
-email: aidarkhanov.dair@gmail.com
-phone_number: "+37122052780"
+
+contacts:
+  email: aidarkhanov.dair@gmail.com
+  phone: "+37122052780"
 
 skills:
   - name: Skills
@@ -78,8 +80,8 @@ skills:
   <section class="contacts">
     <h2>Connect with me!</h2>
 
-    <a class="contacts__link" href="mailto:aidarkhanov.dair@gmail.com">aidarkhanov.dair@gmail.com</a>
-    <a class="contacts__link" href="tel:+37122052780">+371 220 527 80</a>
+    <a class="contacts__link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
+    <a class="contacts__link" href="tel:{{ contacts.phone }}">{{ contacts.phone }}</a>
   </section>
 </main>
 
