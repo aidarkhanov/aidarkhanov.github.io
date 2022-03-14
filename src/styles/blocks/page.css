@@ -9,6 +9,7 @@
 }
 
 .page__body {
-  max-width: 1920px;
+  padding-inline: 1.5rem;
+  max-width: 75rem;
   margin: 0 auto;
 }

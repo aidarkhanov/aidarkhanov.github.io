@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding-block: 4rem;
+}
+
+.copyright__item {
+  margin-block: 0;
+}
+
+.copyright__item--author {
+  color: #A7A9AB;
+}
+
+@media screen and (min-width: 480px) {
+  .copyright__item {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright__item {
+    font-size: 1.75rem;
+  }
+}

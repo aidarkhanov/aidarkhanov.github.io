@@ -1,0 +1,41 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contacts__heading {
+  font-size: 1.5rem;
+  margin-block: 0;
+}
+
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__link {
+  color: #0000F0;
+  transition: color ease 200ms;
+  padding-block: 0.5rem;
+}
+
+.contacts__link:hover {
+  color: #3C0078;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts__heading {
+    font-size: 2rem;
+  }
+
+  .contacts__link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__heading {
+    font-size: 2.25rem;
+  }
+}

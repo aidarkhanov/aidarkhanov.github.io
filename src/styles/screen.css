@@ -1,5 +1,10 @@
 @import "fonts.css";
 
 @import "blocks/box-sizing.css";
-@import "blocks/page.css";
 @import "blocks/visually-hidden.css";
+@import "blocks/page.css";
+@import "blocks/main.css";
+@import "blocks/header.css";
+@import "blocks/skills.css";
+@import "blocks/contacts.css";
+@import "blocks/copyright.css";

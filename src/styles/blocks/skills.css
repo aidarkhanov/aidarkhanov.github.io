@@ -1,0 +1,87 @@
+.skills__heading {
+  font-size: 1.5rem;
+  margin-block: 0 1rem;
+}
+
+.skills__list {
+  margin-block: 0;
+}
+
+.skills__list-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.skills__list-description {
+  line-height: 1.5;
+  margin-left: 0;
+}
+
+.skills__list-heading + .skills__list-description:not(:last-of-type) {
+  margin-bottom: 1.25rem;
+}
+
+.skills:not(:last-of-type) {
+  margin-bottom: 1.75rem;
+}
+
+@media screen and (min-width: 480px) {
+  .skills:not(:last-of-type) {
+    margin-bottom: 2.25rem;
+  }
+
+  .skills__heading {
+    font-size: 2rem;
+    margin-block: 0 1.5rem;
+  }
+
+  .skills__list-heading {
+    font-size: 1.5rem;
+  }
+
+  .skills__list-description {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-grid {
+    display: grid;
+    grid-template: "skills familiar-with" auto
+                   "skills languages" 1fr;
+    gap: 3rem;
+  }
+
+  .skills:nth-child(1) {
+    grid-area: skills;
+  }
+
+  .skills:nth-child(2) {
+    grid-area: familiar-with;
+  }
+
+  .skills:nth-child(3) {
+    grid-area: languages;
+  }
+
+  .skills:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .skills__heading {
+    font-size: 2.25rem;
+  }
+
+  .skills__list-heading {
+    font-size: 1.75rem;
+  }
+
+  .skills__list-description {
+    font-size: 1.5rem;
+  }
+
+  .skills__list-heading + .skills__list-description:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
