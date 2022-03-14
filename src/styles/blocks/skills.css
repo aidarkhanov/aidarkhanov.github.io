@@ -82,6 +82,6 @@
   }
 
   .skills__list-heading + .skills__list-description:not(:last-of-type) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
   }
 }
