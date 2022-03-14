@@ -38,7 +38,7 @@ sections:
 <html class="page" lang="en-US">
 
 <head>
-  <title>Dair Aidarkhanov | {{ title }}</title>
+  <title>Dair Aidarkhanov — {{ title }}</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,7 +68,7 @@ sections:
 
     <dl class="skills__list">
     {%- for item in section.list %}
-      <dt class="section__list-heading">{{ item.item }}</dt>
+      <dt class="skills__list-heading">{{ item.item }}</dt>
       <dd class="skills__list-description">{{ item.description }}</dd>
     {%- endfor %}
     </dl>
