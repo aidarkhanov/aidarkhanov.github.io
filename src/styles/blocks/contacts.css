@@ -14,6 +14,10 @@
   flex-direction: column;
 }
 
+.contacts__links-entry {
+  margin-block: 0.5rem;
+}
+
 .contacts__link {
   color: #0000F0;
   transition: color ease 200ms;
@@ -29,7 +33,7 @@
     font-size: 2rem;
   }
 
-  .contacts__link {
+  .contacts__links-entry {
     font-size: 1.25rem;
   }
 }
@@ -39,7 +43,7 @@
     font-size: 2.25rem;
   }
 
-  .contacts__link {
+  .contacts__links-entry {
     font-size: 1.5rem;
   }
 }
