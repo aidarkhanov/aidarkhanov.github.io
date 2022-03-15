@@ -11,7 +11,7 @@
 }
 
 .copyright__item--author {
-  color: #A7A9AB;
+  color: #FF2DB4;
 }
 
 @media screen and (min-width: 480px) {
@@ -23,5 +23,9 @@
 @media screen and (min-width: 768px) {
   .copyright__item {
     font-size: 1.75rem;
+  }
+
+  .copyright__item--author {
+    font-size: 1.25rem;
   }
 }
