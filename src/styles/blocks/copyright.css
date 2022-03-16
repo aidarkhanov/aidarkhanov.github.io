@@ -10,11 +10,11 @@
   margin-block: 0;
 }
 
-.copyright__item--author {
+.copyright__item--love {
   color: #FF2DB4;
 }
 
-.copyright__item--author:hover {
+.copyright__item--love:hover {
   animation-name: heartbeat;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
@@ -31,7 +31,7 @@
     font-size: 1.75rem;
   }
 
-  .copyright__item--author {
+  .copyright__item--love {
     font-size: 1.25rem;
   }
 }
