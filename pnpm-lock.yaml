@@ -4,6 +4,7 @@ specifiers:
   '@11ty/eleventy': ^1.0.0
   del: ^6.0.0
   gulp: ^4.0.2
+  gulp-json-minify: ^1.2.2
   gulp-postcss: ^9.0.1
   gulp-rev: ^9.0.0
   gulp-rev-rewrite: ^5.0.0
@@ -21,6 +22,7 @@ devDependencies:
   '@11ty/eleventy': 1.0.0
   del: 6.0.0
   gulp: 4.0.2
+  gulp-json-minify: 1.2.2
   gulp-postcss: 9.0.1_postcss@8.4.8
   gulp-rev: 9.0.0
   gulp-rev-rewrite: 5.0.0
@@ -1770,6 +1772,13 @@ packages:
       yargs: 7.1.2
     dev: true
 
+  /gulp-json-minify/1.2.2:
+    resolution: {integrity: sha512-8acCNnGiDELUh9qqZVm57eu4KVclibiVM7hXxeMn3nsdcQtEWfHUSpcxvrqTVCL5MchErGMDDDSxmcF6RTFcJQ==}
+    dependencies:
+      node-json-minify: 1.0.0
+      through2: 2.0.5
+    dev: true
+
   /gulp-postcss/9.0.1_postcss@8.4.8:
     resolution: {integrity: sha512-9QUHam5JyXwGUxaaMvoFQVT44tohpEFpM8xBdPfdwTYGM0AItS1iTQz0MpsF8Jroh7GF5Jt2GVPaYgvy8qD2Fw==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2748,6 +2757,10 @@ packages:
     resolution: {integrity: sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==}
     dependencies:
       lower-case: 1.1.4
+    dev: true
+
+  /node-json-minify/1.0.0:
+    resolution: {integrity: sha1-e7NDL5ZYtr6x2ZP9XVOzyinQ15w=}
     dev: true
 
   /nopt/5.0.0:

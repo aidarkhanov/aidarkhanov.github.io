@@ -2,6 +2,7 @@ const buffer = require("vinyl-buffer")
 const del = require("del")
 const fs = require("fs")
 const gulp = require("gulp")
+const jsonmin = require("gulp-json-minify")
 const paths = require("vinyl-paths")
 const postcss = require("gulp-postcss")
 const rev = require("gulp-rev")
@@ -26,6 +27,13 @@ gulp.task("scripts", () =>
     .pipe(buffer())
     .pipe(terser())
     .pipe(gulp.dest("dist/scripts"))
+)
+
+gulp.task("json", () =>
+  gulp
+    .src(["dist/manifest.json"])
+    .pipe(jsonmin())
+    .pipe(gulp.dest("dist"))
 )
 
 gulp.task("cache:hash", () =>
@@ -71,6 +79,7 @@ gulp.task("clean", () =>
 gulp.task("build", gulp.series(
   "styles",
   "scripts",
+  "json",
   "cache",
   "clean"
 ))
