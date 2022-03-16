@@ -1,3 +1,7 @@
+.skills:not(:last-of-type) {
+  margin-bottom: 1.75rem;
+}
+
 .skills__heading {
   font-size: 1.5rem;
   margin-block: 0 1rem;
@@ -20,10 +24,6 @@
 
 .skills__list-heading + .skills__list-description:not(:last-of-type) {
   margin-bottom: 1.25rem;
-}
-
-.skills:not(:last-of-type) {
-  margin-bottom: 1.75rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -83,5 +83,11 @@
 
   .skills__list-heading + .skills__list-description:not(:last-of-type) {
     margin-bottom: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-grid {
+    gap: 3rem 7rem;
   }
 }
