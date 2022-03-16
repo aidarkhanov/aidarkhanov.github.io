@@ -1,0 +1,32 @@
+.introduction__greeting {
+  font-size: 1.75rem;
+  margin-block: 0 0.75rem;
+}
+
+.introduction__about {
+  line-height: 1.4;
+  margin-block: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .introduction__greeting {
+    font-size: 2rem;
+    margin-block: 0 0.75rem;
+  }
+
+  .introduction__about {
+    font-size: 1.25rem;
+    margin-block: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .introduction__greeting {
+    font-size: 3rem;
+    margin-block: 0 1rem;
+  }
+
+  .introduction__about {
+    font-size: 2rem;
+  }
+}

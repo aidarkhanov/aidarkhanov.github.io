@@ -1,0 +1,33 @@
+.language-switcher {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-switcher__language {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-block: 0.25rem;
+}
+
+.language-switcher__language:hover {
+  text-decoration: underline;
+  text-decoration-color: #0000F0;
+}
+
+@media screen and (min-width: 480px) {
+  .language-switcher__language {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .language-switcher {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .language-switcher__language {
+    font-size: 3rem;
+  }
+}

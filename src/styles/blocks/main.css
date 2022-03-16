@@ -12,6 +12,15 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    gap: 4rem;
+    display: grid;
+    grid-template: "skills familiar-with" auto
+                   "skills languages" 1fr;
+    gap: 4rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    gap: 4rem 7rem;
   }
 }

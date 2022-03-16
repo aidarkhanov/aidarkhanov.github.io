@@ -9,12 +9,15 @@
   margin-block: 0;
 }
 
-.contacts__links {
+.contacts__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block: 0;
 }
 
-.contacts__links-entry {
+.contacts__list-item {
   margin-block: 0.5rem;
 }
 
@@ -33,7 +36,7 @@
     font-size: 2rem;
   }
 
-  .contacts__links-entry {
+  .contacts__list-item {
     font-size: 1.25rem;
   }
 }
@@ -43,7 +46,7 @@
     font-size: 2.25rem;
   }
 
-  .contacts__links-entry {
+  .contacts__list-item {
     font-size: 1.5rem;
   }
 }
