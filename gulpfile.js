@@ -2,6 +2,7 @@ const buffer = require("vinyl-buffer")
 const del = require("del")
 const fs = require("fs")
 const gulp = require("gulp")
+const htmlmin = require("gulp-htmlmin")
 const jsonmin = require("gulp-json-minify")
 const paths = require("vinyl-paths")
 const postcss = require("gulp-postcss")
@@ -10,6 +11,13 @@ const rewrite = require("gulp-rev-rewrite")
 const rollup = require("rollup-stream")
 const source = require("vinyl-source-stream")
 const terser = require("gulp-terser")
+
+gulp.task("html", () =>
+  gulp
+    .src("dist/**/*.html")
+    .pipe(htmlmin({ removeComments: true, collapseWhitespace: true }))
+    .pipe(gulp.dest("dist"))
+)
 
 gulp.task("styles", () =>
   gulp
@@ -77,6 +85,7 @@ gulp.task("clean", () =>
 )
 
 gulp.task("build", gulp.series(
+  "html",
   "styles",
   "scripts",
   "json",

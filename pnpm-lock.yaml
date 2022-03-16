@@ -4,12 +4,12 @@ specifiers:
   '@11ty/eleventy': ^1.0.0
   del: ^6.0.0
   gulp: ^4.0.2
+  gulp-htmlmin: ^5.0.1
   gulp-json-minify: ^1.2.2
   gulp-postcss: ^9.0.1
   gulp-rev: ^9.0.0
   gulp-rev-rewrite: ^5.0.0
   gulp-terser: ^2.1.0
-  html-minifier: ^4.0.0
   postcss: ^8.4.8
   postcss-csso: ^6.0.0
   postcss-import: ^14.0.2
@@ -22,12 +22,12 @@ devDependencies:
   '@11ty/eleventy': 1.0.0
   del: 6.0.0
   gulp: 4.0.2
+  gulp-htmlmin: 5.0.1
   gulp-json-minify: 1.2.2
   gulp-postcss: 9.0.1_postcss@8.4.8
   gulp-rev: 9.0.0
   gulp-rev-rewrite: 5.0.0
   gulp-terser: 2.1.0
-  html-minifier: 4.0.0
   postcss: 8.4.8
   postcss-csso: 6.0.0_postcss@8.4.8
   postcss-import: 14.0.2_postcss@8.4.8
@@ -859,6 +859,14 @@ packages:
   /color-support/1.1.3:
     resolution: {integrity: sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==}
     hasBin: true
+    dev: true
+
+  /commander/2.17.1:
+    resolution: {integrity: sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==}
+    dev: true
+
+  /commander/2.19.0:
+    resolution: {integrity: sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==}
     dev: true
 
   /commander/2.20.3:
@@ -1772,6 +1780,15 @@ packages:
       yargs: 7.1.2
     dev: true
 
+  /gulp-htmlmin/5.0.1:
+    resolution: {integrity: sha512-ASlyDPZOSKjHYUifYV0rf9JPDflN9IRIb8lw2vRqtYMC4ljU3zAmnnaVXwFQ3H+CfXxZSUesZ2x7jrnPJu93jA==}
+    engines: {node: '>= 6.0'}
+    dependencies:
+      html-minifier: 3.5.21
+      plugin-error: 1.0.1
+      through2: 2.0.5
+    dev: true
+
   /gulp-json-minify/1.2.2:
     resolution: {integrity: sha512-8acCNnGiDELUh9qqZVm57eu4KVclibiVM7hXxeMn3nsdcQtEWfHUSpcxvrqTVCL5MchErGMDDDSxmcF6RTFcJQ==}
     dependencies:
@@ -1950,18 +1967,18 @@ packages:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
 
-  /html-minifier/4.0.0:
-    resolution: {integrity: sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==}
-    engines: {node: '>=6'}
+  /html-minifier/3.5.21:
+    resolution: {integrity: sha512-LKUKwuJDhxNa3uf/LPR/KVjm/l3rBqtYeCOAekvG8F1vItxMUpueGd94i/asDDr8/1u7InxzFA5EeGjhhG5mMA==}
+    engines: {node: '>=4'}
     hasBin: true
     dependencies:
       camel-case: 3.0.0
       clean-css: 4.2.4
-      commander: 2.20.3
+      commander: 2.17.1
       he: 1.2.0
       param-case: 2.1.1
       relateurl: 0.2.7
-      uglify-js: 3.15.3
+      uglify-js: 3.4.10
     dev: true
 
   /http-errors/1.6.3:
@@ -4174,6 +4191,16 @@ packages:
     resolution: {integrity: sha512-6iCVm2omGJbsu3JWac+p6kUiOpg3wFO2f8lIXjfEb8RrmLjzog1wTPMmwKB7swfzzqxj9YM+sGUM++u1qN4qJg==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    dev: true
+    optional: true
+
+  /uglify-js/3.4.10:
+    resolution: {integrity: sha512-Y2VsbPVs0FIshJztycsO2SfPk7/KAF/T72qzv9u5EpQ4kB2hQoHlhNQTsNyy6ul7lQtqJN/AoWeS23OzEiEFxw==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    dependencies:
+      commander: 2.19.0
+      source-map: 0.6.1
     dev: true
 
   /unc-path-regex/0.1.2:

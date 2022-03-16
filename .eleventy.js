@@ -25,19 +25,6 @@ module.exports = config => {
     content.replace(/<img(?!.*loading)/g, "<img loading=\"lazy\"")
   })
 
-  config.addTransform("minifyHtml", (content, outputPath) => {
-    if (outputPath && outputPath.endsWith(".html")) {
-      const minify = require("html-minifier").minify
-
-      return minify(content, {
-        removeComments: true,
-        collapseWhitespace: true
-      })
-    }
-
-    return content
-  })
-
   return {
     dir: {
       input: "src",
