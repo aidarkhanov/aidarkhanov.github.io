@@ -14,6 +14,12 @@
   color: #FF2DB4;
 }
 
+.copyright__item--author:hover {
+  animation-name: heartbeat;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+
 @media screen and (min-width: 480px) {
   .copyright__item {
     font-size: 1.25rem;
@@ -27,5 +33,27 @@
 
   .copyright__item--author {
     font-size: 1.25rem;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.2);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.2);
+  }
+
+  70% {
+    transform: scale(1);
   }
 }
