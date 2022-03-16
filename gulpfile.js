@@ -12,12 +12,18 @@ const rollup = require("rollup-stream")
 const source = require("vinyl-source-stream")
 const terser = require("gulp-terser")
 
+
+// HTML
+
 gulp.task("html", () =>
   gulp
     .src("dist/**/*.html")
     .pipe(htmlmin({ removeComments: true, collapseWhitespace: true }))
     .pipe(gulp.dest("dist"))
 )
+
+
+// Styles
 
 gulp.task("styles", () =>
   gulp
@@ -29,6 +35,9 @@ gulp.task("styles", () =>
     .pipe(gulp.dest("dist/styles"))
 )
 
+
+// Scripts
+
 gulp.task("scripts", () =>
   rollup({ input: "dist/scripts/main.js", format: "es" })
     .pipe(source("main.js"))
@@ -37,12 +46,18 @@ gulp.task("scripts", () =>
     .pipe(gulp.dest("dist/scripts"))
 )
 
+
+// JSON
+
 gulp.task("json", () =>
   gulp
-    .src(["dist/manifest.json"])
+    .src("dist/**/*.json")
     .pipe(jsonmin())
     .pipe(gulp.dest("dist"))
 )
+
+
+// Cache
 
 gulp.task("cache:hash", () =>
   gulp
@@ -74,6 +89,9 @@ gulp.task("cache:replace", () => {
 
 gulp.task("cache", gulp.series("cache:hash", "cache:replace"))
 
+
+// Clean
+
 gulp.task("clean", () =>
   del([
     "dist/styles/**/*",
@@ -83,6 +101,9 @@ gulp.task("clean", () =>
     "dist/rev.json"
   ])
 )
+
+
+// Build
 
 gulp.task("build", gulp.series(
   "html",
