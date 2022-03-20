@@ -20,6 +20,7 @@
 .skills__item-description {
   font-size: var(--step-0);
   hyphens: auto;
+  -webkit-hyphens: auto;
   letter-spacing: -0.019492327565219923em;
   line-height: 1.5;
   margin-inline-start: 0;
