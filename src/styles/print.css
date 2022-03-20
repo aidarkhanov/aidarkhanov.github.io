@@ -25,7 +25,7 @@
   display: grid;
   column-gap: 4rem;
   grid-template: "skills familiar-with" auto
-                 "skills languages" 1fr;
+                 "skills languages" 1fr / 1fr 1fr;
 }
 
 .skills:nth-child(1) {

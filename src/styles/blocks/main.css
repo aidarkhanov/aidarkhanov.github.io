@@ -9,7 +9,7 @@
     display: grid;
     column-gap: 64px;
     grid-template: "skills familiar-with" auto
-                   "skills languages" 1fr;
+                   "skills languages" 1fr / 1fr 1fr;
   }
 }
 
