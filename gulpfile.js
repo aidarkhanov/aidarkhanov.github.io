@@ -8,7 +8,7 @@ const paths = require("vinyl-paths")
 const postcss = require("gulp-postcss")
 const rev = require("gulp-rev")
 const rewrite = require("gulp-rev-rewrite")
-const rollup = require("rollup-stream")
+const rollup = require("@rollup/stream")
 const source = require("vinyl-source-stream")
 const terser = require("gulp-terser")
 
@@ -39,7 +39,7 @@ gulp.task("styles", () =>
 // Scripts
 
 gulp.task("scripts", () =>
-  rollup({ input: "dist/scripts/main.js", format: "es" })
+  rollup({ input: "dist/scripts/main.js", output: { format: "es" } })
     .pipe(source("main.js"))
     .pipe(buffer())
     .pipe(terser())
