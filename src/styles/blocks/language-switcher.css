@@ -1,10 +1,14 @@
-.language-switcher {
+.language-switcher__list {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  margin-block: 0;
+  padding-inline: 0;
 }
 
 .language-switcher__language {
   border-radius: 0.25rem;
+  display: block;
   font-size: var(--step-4);
   line-height: 1;
   padding: var(--space-2xs);
@@ -17,7 +21,7 @@
 }
 
 @media screen and (min-width: 448px) {
-  .header__language-switcher {
+  .header__language-switcher .language-switcher__list {
     flex-direction: row;
     gap: var(--space-2xs);
   }

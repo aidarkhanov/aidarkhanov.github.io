@@ -24,7 +24,8 @@ contacts:
   telegram: dairandyou
 
 copyright:
-  love: Handcrafted with 💝
+  love_decorative: Handcrafted with 💝
+  love: Handcrafted with love
 
 skills:
   - heading: Skills
@@ -103,8 +104,15 @@ skills:
   <nav class="language-switcher header__language-switcher" aria-labelledby="language-switcher">
     <h2 class="visually-hidden" id="language-switcher">{{ language_switcher.heading }}</h2>
 
-    <a class="language-switcher__language" href="/lv/">🇱🇻</a>
-    <a class="language-switcher__language" href="/ru/">🇷🇺</a>
+    <ul class="language-switcher__list">
+      <li class="language-switcher__list-item">
+        <a class="language-switcher__language" aria-label="Latvian" href="/lv/">🇱🇻</a>
+      </li>
+
+      <li class="language-switcher__list-item">
+        <a class="language-switcher__language" aria-label="Russian" href="/ru/">🇷🇺</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
@@ -141,7 +149,8 @@ skills:
 
 <footer class="copyright">
   <p class="copyright__item">{% year %}</p>
-  <p class="copyright__item copyright__item--love">{{ copyright.love }}</p>
+  <p class="copyright__item copyright__item--love" aria-hidden="true">{{ copyright.love_decorative }}</p>
+  <p class="visually-hidden">{{ copyright.love }}</p>
 </footer>
 
 <script type="module" src="/scripts/main.js"></script>
