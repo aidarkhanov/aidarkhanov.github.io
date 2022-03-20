@@ -1,26 +1,14 @@
 .main {
   display: flex;
   flex-flow: column;
-  gap: 2rem;
+  gap: var(--space-3xl);
 }
 
-@media screen and (min-width: 480px) {
-  .main {
-    gap: 3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   .main {
     display: grid;
+    gap: var(--space-3xl) 7rem;
     grid-template: "skills familiar-with" auto
                    "skills languages" 1fr;
-    gap: 4rem 3rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main {
-    gap: 4rem 7rem;
   }
 }

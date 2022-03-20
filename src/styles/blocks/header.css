@@ -1,13 +1,7 @@
 .header {
-  display: flex;
   align-items: center;
+  display: flex;
+  gap: var(--space-s);
   justify-content: space-between;
-  gap: 1.25rem;
-  margin-block: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    margin-block: 4rem 5.5rem;
-  }
+  margin-block: var(--space-2xl-5xl);
 }

@@ -99,7 +99,7 @@ skills:
     <p class="introduction__about">{{ introduction.about }}</p>
   </section>
 
-  <nav class="language-switcher" aria-labelledby="language-switcher">
+  <nav class="language-switcher header__language-switcher" aria-labelledby="language-switcher">
     <h2 class="visually-hidden" id="language-switcher">{{ language_switcher.heading }}</h2>
 
     <a class="language-switcher__language" href="#">🇱🇻</a>
@@ -124,15 +124,17 @@ skills:
   <section class="contacts">
     <h2 class="contacts__heading">{{ contacts.interface.heading }}</h2>
 
-    <ul class="contacts__list">
-      <li class="contacts__list-item">
-        {{ contacts.interface.email }}: <a class="contacts__link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
-      </li>
+    <dl class="contacts__list">
+      <dt class="contacts__label">{{ contacts.interface.email }}</dt>
+      <dd class="contacts__item">
+        <a class="contacts__link" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
+      </dd>
 
-      <li class="contacts__list-item">
-        {{ contacts.interface.telegram }}: <a class="contacts__link" href="https://t.me/{{ contacts.telegram }}">@{{ contacts.telegram }}</a>
-      </li>
-    </ul>
+      <dt class="contacts__label">{{ contacts.interface.telegram }}</dt>
+      <dd class="contacts__item">
+        <a class="contacts__link" href="https://t.me/{{ contacts.telegram }}">@{{ contacts.telegram }}</a>
+      </dd>
+    </dl>
   </section>
 </main>
 

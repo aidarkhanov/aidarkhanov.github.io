@@ -4,30 +4,21 @@
 }
 
 .language-switcher__language {
+  border-radius: 0.25rem;
+  font-size: var(--step-5);
+  line-height: 1;
+  padding: var(--space-2xs);
   text-decoration: none;
-  font-size: 1.5rem;
-  padding-block: 0.25rem;
+  transition: background-color ease 200ms;
 }
 
 .language-switcher__language:hover {
-  text-decoration: underline;
-  text-decoration-color: #0000F0;
+  background-color: #E6E7E8;
 }
 
-@media screen and (min-width: 480px) {
-  .language-switcher__language {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .language-switcher {
-    display: flex;
+@media screen and (min-width: 448px) {
+  .header__language-switcher {
     flex-direction: row;
-    gap: 2rem;
-  }
-
-  .language-switcher__language {
-    font-size: 3rem;
+    gap: var(--space-xs);
   }
 }
