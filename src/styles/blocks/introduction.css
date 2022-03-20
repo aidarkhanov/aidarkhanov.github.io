@@ -1,6 +1,6 @@
 .introduction__greeting {
-  font-size: var(--step-4);
-  letter-spacing: -0.022268656995380044em;
+  font-size: var(--step-3);
+  letter-spacing: -0.022166834048766366em;
   line-height: 1;
   margin-block: 0 var(--space-xs);
 }
@@ -13,6 +13,11 @@
 }
 
 @media screen and (min-width: 736px) {
+  .introduction__greeting {
+    font-size: var(--step-4);
+    letter-spacing: -0.022268656995380044em;
+  }
+
   .introduction__about {
     font-size: var(--step-2);
     letter-spacing: -0.021855303910432774em;

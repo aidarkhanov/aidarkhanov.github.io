@@ -14,14 +14,14 @@
   --space-6xl: clamp(3.00rem, 2.49rem + 2.68vw, 4.50rem);
   --space-2xl-5xl: clamp(2.00rem, 1.28rem + 3.79vw, 4.13rem);
 
-  --step--2: clamp(1.04rem, 0.70rem + 0.45vw, 0.79rem);
-  --step--1: clamp(1.25rem, 0.77rem + 0.65vw, 0.89rem);
+  --step--2: clamp(1.04rem, 0.58rem + 0.62vw, 0.69rem);
+  --step--1: clamp(1.25rem, 0.69rem + 0.74vw, 0.83rem);
   --step-0: clamp(1.00rem, 0.83rem + 0.89vw, 1.50rem);
-  --step-1: clamp(1.13rem, 0.90rem + 1.21vw, 1.80rem);
-  --step-2: clamp(1.27rem, 0.96rem + 1.60vw, 2.16rem);
-  --step-3: clamp(1.42rem, 1.03rem + 2.09vw, 2.59rem);
-  --step-4: clamp(1.60rem, 1.09rem + 2.69vw, 3.11rem);
-  --step-5: clamp(1.80rem, 1.15rem + 3.45vw, 3.73rem);
+  --step-1: clamp(1.20rem, 1.00rem + 1.07vw, 1.80rem);
+  --step-2: clamp(1.44rem, 1.20rem + 1.29vw, 2.16rem);
+  --step-3: clamp(1.73rem, 1.44rem + 1.54vw, 2.59rem);
+  --step-4: clamp(2.07rem, 1.72rem + 1.85vw, 3.11rem);
+  --step-5: clamp(2.49rem, 2.07rem + 2.22vw, 3.73rem);
 }
 
 .page,

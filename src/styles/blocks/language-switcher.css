@@ -5,7 +5,7 @@
 
 .language-switcher__language {
   border-radius: 0.25rem;
-  font-size: var(--step-5);
+  font-size: var(--step-4);
   line-height: 1;
   padding: var(--space-2xs);
   text-decoration: none;
@@ -19,6 +19,6 @@
 @media screen and (min-width: 448px) {
   .header__language-switcher {
     flex-direction: row;
-    gap: var(--space-xs);
+    gap: var(--space-2xs);
   }
 }
