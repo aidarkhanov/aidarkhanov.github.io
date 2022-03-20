@@ -1,8 +1,8 @@
 .introduction__greeting {
   font-size: var(--step-3);
   letter-spacing: -0.022166834048766366em;
-  line-height: 1;
-  margin-block: 0 var(--space-xs);
+  line-height: 1.2;
+  margin-block: 0 var(--space-2xs);
 }
 
 .introduction__about {
