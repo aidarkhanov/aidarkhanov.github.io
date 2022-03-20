@@ -1,76 +1,74 @@
 ---
-permalink: /
+permalink: /lv/
 name: Dair Aidarkhanov
 locale: en-US
 title: CV
 description: >-
-  A CV page consisting of personal information, a list of
-  known technologies, and experience.
+  CV lapa, kurā ir personīgā informācija, saraksts ar
+  zināmās tehnoloģijas un pieredze.
 
 introduction:
-  greeting: Hey, I’m Dair
-  about: A web developer based in Riga, Latvia
+  greeting: Sveiks, esmu Dairis
+  about: Web izstrādātājs no Rīga, Latvija
 
 language_switcher:
-  heading: Switch language
+  heading: Pārslēgt valodu
 
 contacts:
   interface:
-    heading: Connect with me!
-    email: Email
+    heading: Sazinieties ar mani
+    email: E-pasts
     telegram: Telegram
 
   email: work@dair.lv
   telegram: dairandyou
 
 copyright:
-  love: Handcrafted with 💝
+  love: Ar rokām darināts ar 💝
 
 skills:
-  - heading: Skills
+  - heading: Prasmes
     list:
       - heading: PHP
         description: >-
-          Familiar with Laravel, OOP, design patterns, PSR
-          standards, basic security practices.
+          Pārzina Laravel, OOP, dizaina modeļus, PSR
+          standartus, drošības praksi.
       - heading: JavaScript
         description: >-
-          Front-end development, React, Svelte, familiar
-          with PWA.
+          Frontend izstrāde, React, Svelte, zināšanas PWA.
       - heading: HTML
         description: >-
-          Know how to create semantic markup and test the
-          markup with the accessibility tools (VoiceOver).
+          Zinu, kā veidot semantisko izkārtojumu, un varu
+          to pārbaudīt ar pieejamības rīkiem (VoiceOver).
       - heading: CSS
         description: >-
-          Have a conceptual understanding of BEM, modern
-          styling techniques, such as grid, scopes,
-          container queries.
+          Man ir konceptuāla izpratne par BEM. Pielietojiet
+          mūsdienīgas izkārtojuma metodes: grid, container
+          queries.
       - heading: SQL
         description: >-
-          Able to design simple table structure, layout
-          their relationship, and make queries to the
-          database.
+          Varu izveidot vienkāršu tabulas struktūru un
+          atsaukties uz datu bāzi, lai iegūtu datus.
 
-  - heading: Familiar with
+  - heading: Iepazītas ar
     list:
       - heading: Git
         description: >-
-          Know how to contribute to projects, make commits,
-          push changes, and work on different branches.
+          Zinu, kā sniegt ieguldījumu projektos, veikt
+          labojumus un strādāt dažādās zariņšs.
       - heading: SOLID
         description: >-
-          Practiced each principle of SOLID and can use
-          them whenever they are a good fit.
+          Praktizēti SOLID principi, var piemērot katru no
+          tiem pēc vajadzības.
 
-  - heading: Languages
+  - heading: Valodas
     list:
-      - heading: English
-        description: Fluent.
-      - heading: Russian
-        description: Native speaker.
-      - heading: Latvian
-        description: Very basic but constantly improving.
+      - heading: Angļu
+        description: Augsts līmenis.
+      - heading: Krievu
+        description: Dzimtā valoda.
+      - heading: Latviešu
+        description: Ļoti vienkārša, bet pastāvīgi uzlabojas.
 ---
 <!doctype html>
 <html class="page" lang="{{ locale }}">
@@ -103,7 +101,7 @@ skills:
   <nav class="language-switcher header__language-switcher" aria-labelledby="language-switcher">
     <h2 class="visually-hidden" id="language-switcher">{{ language_switcher.heading }}</h2>
 
-    <a class="language-switcher__language" href="/lv/">🇱🇻</a>
+    <a class="language-switcher__language" href="/">🇺🇸</a>
     <a class="language-switcher__language" href="/ru/">🇷🇺</a>
   </nav>
 </header>
