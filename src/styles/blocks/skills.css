@@ -9,7 +9,7 @@
   margin-block: 0;
 }
 
-.skills__list-item-heading {
+.skills__item-heading {
   font-size: var(--step-1);
   font-weight: 700;
   letter-spacing: -0.02108498572574889em;
@@ -17,7 +17,7 @@
   margin-block-end: var(--space-3xs);
 }
 
-.skills__list-item-description {
+.skills__item-description {
   font-size: var(--step-0);
   hyphens: auto;
   letter-spacing: -0.019492327565219923em;
@@ -25,7 +25,7 @@
   margin-inline-start: 0;
 }
 
-.skills__list-item-heading + .skills__list-item-description:not(:last-of-type) {
+.skills__item-heading + .skills__item-description:not(:last-of-type) {
   margin-block-end: var(--space-s);
 }
 

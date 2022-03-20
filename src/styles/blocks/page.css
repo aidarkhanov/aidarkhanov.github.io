@@ -48,6 +48,12 @@
 
 @media screen and (min-width: 736px) {
   .page__body {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .page__body {
     padding-inline: 2rem;
   }
 }
