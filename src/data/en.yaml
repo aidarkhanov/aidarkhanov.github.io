@@ -1,0 +1,70 @@
+permalink: /
+name: Dair Aidarkhanov
+locale: en-US
+title: CV
+description: >-
+  A CV page consisting of personal information, a list of
+  known technologies, and experience.
+
+introduction:
+  greeting: Hey, I’m Dair
+  about: A web developer based in Riga, Latvia
+
+language_switcher:
+  heading: Switch language
+
+contacts:
+  interface:
+    heading: Connect with me!
+    email: Email
+    telegram: Telegram
+
+copyright:
+  love_decorative: Handcrafted with 💝
+  love: Handcrafted with love
+
+skills:
+  - heading: Skills
+    list:
+      - heading: PHP
+        description: >-
+          Familiar with Laravel, OOP, design patterns, PSR
+          standards, basic security practices.
+      - heading: JavaScript
+        description: >-
+          Front-end development, React, Svelte, familiar
+          with PWA.
+      - heading: HTML
+        description: >-
+          Know how to create semantic markup and test the
+          markup with the accessibility tools (VoiceOver).
+      - heading: CSS
+        description: >-
+          Have a conceptual understanding of BEM, modern
+          styling techniques, such as grid, scopes,
+          container queries.
+      - heading: SQL
+        description: >-
+          Able to design simple table structure, layout
+          their relationship, and make queries to the
+          database.
+
+  - heading: Familiar with
+    list:
+      - heading: Git
+        description: >-
+          Know how to contribute to projects, make commits,
+          push changes, and work on different branches.
+      - heading: SOLID
+        description: >-
+          Practiced each principle of SOLID and can use
+          them whenever they are a good fit.
+
+  - heading: Languages
+    list:
+      - heading: English
+        description: Fluent.
+      - heading: Russian
+        description: Native speaker.
+      - heading: Latvian
+        description: Very basic but constantly improving.
