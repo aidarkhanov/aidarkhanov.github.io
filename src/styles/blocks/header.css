@@ -1,7 +1,0 @@
-.header {
-  align-items: center;
-  display: flex;
-  gap: var(--space-s);
-  justify-content: space-between;
-  margin-block: var(--space-2xl-5xl);
-}
