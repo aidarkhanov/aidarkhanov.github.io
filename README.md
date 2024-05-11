@@ -1,3 +1,3 @@
 # dair.is
 
-_A personal website._
+A personal website.
