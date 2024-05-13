@@ -1,4 +1,6 @@
 ---
+import Showcase from "../components/Showcase.astro";
+import { PencilLine, Joystick, Gamepad, BookOpenText, SquareUser } from "lucide-astro";
 ---
 
 <html lang="en-UK">
@@ -15,17 +17,41 @@
 
   <body>
 
-    <section class="p-3 mx-auto my-8 md:max-w-xl md:my-20 md:p-0">
-      <h1 class="text-2xl font-bold">Dair Aidarkhanov</h1>
-      <small class="text-base text-gray-600">Web Developer</small>
+    <div class="p-3 mx-auto md:max-w-xl">
+      <section class="my-8 md:mbs-20">
+        <header>
+          <h1 class="text-2xl font-bold">Dair Aidarkhanov</h1>
+          <p class="text-base text-gray-600">Web Developer</p>
+        </header>
 
-      <p class="text-lg mbs-3 text-balance">
-        I am good at creating websites. Making them <i>fast</i>, <i>pleasant</i>
-        to use, and <i>accessible</i> for people with visual impairing or motor
-        deficiency. I am not afraid to say no to the vogue shiny technology but
-        keep my mind open.
-      </p>
-    </section>
+        <p class="text-lg mbs-3 text-pretty">
+          I am good at creating websites. Making them <em>fast</em>,
+          <em>pleasant</em> to use, <em>accessible</em> for people with visual
+          impairing and motor deficiency. Keep my mind open. Not afraid to say
+          no to the vogue shiny technology.
+        </p>
+      </section>
+
+      <section class="grid gap-4 md:grid-cols-2">
+        <h2 class="sr-only">Showcase of my works</h2>
+
+        <Showcase title="Articles" description="I write articles to share my experience and knowledge.">
+          <PencilLine slot="icon" />
+        </Showcase>
+
+        <Showcase title="Games" description="I enjoy creating online games that are fun to play with friends.">
+          <Gamepad slot="icon" />
+        </Showcase>
+
+        <Showcase title="Learning" description="I love teaching programming and database technologies.">
+          <BookOpenText slot="icon" />
+        </Showcase>
+
+        <Showcase title="CV" description="Experience, education, and other formal matters.">
+          <SquareUser slot="icon" />
+        </Showcase>
+      </section>
+    </div>
 
   </body>
 </html>
