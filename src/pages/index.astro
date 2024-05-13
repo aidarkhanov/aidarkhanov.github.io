@@ -4,54 +4,64 @@ import { PencilLine, Gamepad, BookOpenText, SquareUser } from "lucide-astro";
 ---
 
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dair Aidarkhanov's personal website</title>
+        <title>Dair Aidarkhanov's personal website</title>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  </head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    </head>
 
-  <body>
+    <body>
+        <div class="p-3 mx-auto md:max-w-xl">
+            <section class="my-8 md:mbs-20">
+                <header>
+                    <h1 class="text-2xl font-bold">Dair Aidarkhanov</h1>
+                    <p class="text-base text-gray-600">Web Developer</p>
+                </header>
 
-    <div class="p-3 mx-auto md:max-w-xl">
-      <section class="my-8 md:mbs-20">
-        <header>
-          <h1 class="text-2xl font-bold">Dair Aidarkhanov</h1>
-          <p class="text-base text-gray-600">Web Developer</p>
-        </header>
+                <p class="text-lg mbs-3 text-pretty">
+                    I am good at creating websites. Making them <em>fast</em>,
+                    <em>pleasant</em> to use, <em>accessible</em> for people with
+                    visual impairing and motor deficiency. Keep my mind open. Not
+                    afraid to say no to the vogue shiny technology.
+                </p>
+            </section>
 
-        <p class="text-lg mbs-3 text-pretty">
-          I am good at creating websites. Making them <em>fast</em>,
-          <em>pleasant</em> to use, <em>accessible</em> for people with visual
-          impairing and motor deficiency. Keep my mind open. Not afraid to say
-          no to the vogue shiny technology.
-        </p>
-      </section>
+            <section class="grid gap-4 md:grid-cols-2">
+                <h2 class="sr-only">Showcase of my works</h2>
 
-      <section class="grid gap-4 md:grid-cols-2">
-        <h2 class="sr-only">Showcase of my works</h2>
+                <Showcase
+                    title="Articles"
+                    description="I write articles to share my experience and knowledge."
+                >
+                    <PencilLine slot="icon" />
+                </Showcase>
 
-        <Showcase title="Articles" description="I write articles to share my experience and knowledge.">
-          <PencilLine slot="icon" />
-        </Showcase>
+                <Showcase
+                    title="Games"
+                    description="I enjoy creating online games that are fun to play with friends."
+                >
+                    <Gamepad slot="icon" />
+                </Showcase>
 
-        <Showcase title="Games" description="I enjoy creating online games that are fun to play with friends.">
-          <Gamepad slot="icon" />
-        </Showcase>
+                <Showcase
+                    title="Learning"
+                    description="I love teaching programming and database technologies."
+                >
+                    <BookOpenText slot="icon" />
+                </Showcase>
 
-        <Showcase title="Learning" description="I love teaching programming and database technologies.">
-          <BookOpenText slot="icon" />
-        </Showcase>
-
-        <Showcase title="CV" description="Experience, education, and other formal matters.">
-          <SquareUser slot="icon" />
-        </Showcase>
-      </section>
-    </div>
-
-  </body>
+                <Showcase
+                    title="CV"
+                    description="Experience, education, and other formal matters."
+                >
+                    <SquareUser slot="icon" />
+                </Showcase>
+            </section>
+        </div>
+    </body>
 </html>
